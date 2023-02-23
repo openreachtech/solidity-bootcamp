@@ -1,27 +1,27 @@
 # NFTについて
 
 ## 代表的なインターフェース
-#### name: Token名を返す
+#### name: NFT名を返す
 ```solidity
 function name() public view returns (string _name);
 ```
 
-#### symbol: Tokenのシンボルを返す
+#### symbol: NFTシンボルを返す
 ```solidity
 function symbol() public view returns (string _symbol);
 ```
 
-#### ownerOf: トークンの保有者を返す
+#### ownerOf: NFTの保有者を返す
 ```solidity
 function ownerOf(uint256 _tokenId) public view returns (address);
 ```
 
-#### transfer: トークンを移転する
+#### transfer: NFTを移転する
 ```solidity
 function transferFrom(address _from, address _to, uint256 _tokenId) public payable;
 ```
 
-#### approve: 他人に自分のトークンの移転権限を与える
+#### approve: 他人に自分のNFTの移転権限を与える
 ```solidity
 function approve(address _approved, uint256 _tokenId) public payable;
 ```
